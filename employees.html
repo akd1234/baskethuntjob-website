@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BasketHunt Job Portal</title>
+    <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style5.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <!--Header-->
+    <section id="header">
+        <div class="menu">
+    
+            <nav class="navbar navbar-expand-lg navbar-light ml-4">
+                <a class="close-navbar-toggler collapsed" data-bs-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></a>
+                <a class="navbar-brand" href="#"><img src="img/b1.jpg"width="150"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btn" onclick="myFunction()" >
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav" >
+                    <div class="container"id ="myDIV">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jobs.html">Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="employees.html">Employees</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="candidates.html">Candidates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv_package.html">CV Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="job_package.html">Job Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                           <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;background: transparent;border:none;color: white ;padding: 10px;">Register</button>
+                        </li>
+                        <li class="nav-item">
+                            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;background: transparent;border:none;color: white ;padding: 10px;">Sign In</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="post_job.html">
+                                <div class="apply-btn">
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>  POST NEW JOB</button>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+        </div>
+  <!--Step 1:Adding HTML-->
+  
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+    
+      <div class="container">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container m-auto">
+        <label><b>Name</b></label>
+        <input type="text" placeholder="Enter Full Name" name="email" required>
+        <label><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label><b>Phone</b></label>
+        <input type="text" placeholder="Enter Phone No " name="email" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <input type="checkbox">  By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Register</button>
+        </div>
+    </div>
+      </div>
+    </form>
+  </div>
+<div id="id02" class="modal">
+    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+    <div class="container">
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="container">
+        <label><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <input type="checkbox">  By creating an account you agree to our. <a href="#">Terms & Privacy</a>
+
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+  <!--close the modal by just clicking outside of the modal-->
+   <script>
+            $(document).click(function (event) {
+                var clickover = $(event.target);
+                var $navbar = $(".navbar-collapse");               
+                var _opened = $navbar.hasClass("in");
+                if (_opened === true && !clickover.hasClass("navbar-toggler")) {      
+                    $navbar.collapse('hide');
+                }
+            });
+            </script>
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+  <script>
+    var modal = document.getElementById('id01');
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    var modal = document.getElementById('id02');
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+        <div class="banner text-center">
+            <h6>Employees</h6>
+        </div>
+    </section>
+    <div class="search-job text-center">
+        <input type="text" class="form-control" placeholder="keyword,Job Title, or Phrase">
+        <input type="text" class="form-control" placeholder="Company">
+        <input type="text" class="form-control" placeholder="Location">
+        <input type="button" class="btn btn-primary" value="Find Job">
+    </div>
+
+    <!------------------Employess Details ----------------->
+    <section id="jobs">
+        <div class="container text-center">
+            <h4> EMPLOYEERS FOUND !!! </h4>
+            <div class="company-details">
+                <a href="job_detail.html"style="text-decoration: none;">
+                <div class="job-update">
+                    <div class="row row-cols-1 row-cols-sm-4 g-4">
+                        <div class="col">
+                            <img class="col1"src="img/adobe.jpg" width="110" height="110">
+                        </div>
+                        <div class="col">
+                            <p>Automotive Jobs</p>
+                            <h4>Ebiquity Maxi</h4>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i><span>Pakistan</span>
+                        </div>
+                        <div class="col">            
+                            <img src="img/p3.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70">
+                            <img src="img/p4.jpg" class="rounded-circle" alt="Cinque Terre"width="80" height="70">
+                            <img src="img/p5.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70">
+                            <img src="img/p6.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70"> <br>
+                            <span>+10 team size</span>
+                        </div>
+                    </div>
+                    <div class="apply-btn">
+                        <button type="button" class="btn btn-primary">1 vacany</button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-user-plus" aria-hidden="true" style="color: white"></i> Follow</button>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <div class="company-details">
+                <a href="job_detail.html"style="text-decoration: none;">
+                <div class="job-update">
+                    <div class="row row-cols-1 row-cols-sm-4 g-4">
+                        <div class="col">
+                            <img class="col1"src="img/bmw.jpg" width="110" height="110">
+                        </div>
+                        <div class="col">
+                            <p>Mechanical Jobs</p>
+                            <h4>Schrodersty Property</h4>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i><span>Iran</span>
+                        </div>
+                        <div class="col">            
+                            <img src="img/p3.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70">
+                            <img src="img/p4.jpg" class="rounded-circle" alt="Cinque Terre"width="80" height="70">
+                            <img src="img/p5.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70">
+                            <img src="img/p6.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70"> <br>
+                            <span>+15 team size</span>
+                        </div>
+                    </div>
+                    <div class="apply-btn">
+                        <button type="button" class="btn btn-primary">1 vacany</button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-user-plus" aria-hidden="true" style="color: white"></i> Follow</button>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <div class="company-details">
+                <a href="job_detail.html"style="text-decoration: none;">
+                <div class="job-update">
+                    <div class="row row-cols-1 row-cols-sm-4 g-4">
+                        <div class="col">
+                            <img class="col1"src="img/amazon.jpg" width="110" height="110">
+                        </div>
+                        <div class="col">
+                            <p>Technical Jobs</p>
+                            <h4>Web Development</h4>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i><span>France</span>
+                        </div>
+                        <div class="col">            
+                            <img src="img/p3.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70">
+                            <img src="img/p4.jpg" class="rounded-circle" alt="Cinque Terre"width="80" height="70">
+                            <img src="img/p5.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70">
+                            <img src="img/p6.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70"> <br>
+                            <span>+5 team size</span>
+                        </div>
+                    </div>
+                    <div class="apply-btn">
+                        <button type="button" class="btn btn-primary">1 vacany</button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-user-plus" aria-hidden="true" style="color: white"></i> Follow</button>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <div class="company-details">
+                <a href="job_detail.html"style="text-decoration: none;">
+                <div class="job-update">
+                    <div class="row row-cols-1 row-cols-sm-4 g-4">
+                        <div class="col">
+                            <img class="col1"src="img/IBM.jpg" width="110" height="110">
+                        </div>
+                        <div class="col">
+                            <p>Tele communication Jobs</p>
+                            <h4>Technical Property</h4>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i><span>Iran</span>
+                        </div>
+                        <div class="col">            
+                            <img src="img/p3.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70">
+                            <img src="img/p4.jpg" class="rounded-circle" alt="Cinque Terre"width="80" height="70">
+                            <img src="img/p5.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70">
+                            <img src="img/p6.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70"> <br>
+                            <span>+20 team size</span>
+                        </div>
+                    </div>
+                    <div class="apply-btn">
+                        <button type="button" class="btn btn-primary">1 vacany</button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-user-plus" aria-hidden="true" style="color: white"></i> Follow</button>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <div class="company-details">
+                <a href="job_detail.html"style="text-decoration: none;">
+                <div class="job-update">
+                    <div class="row row-cols-1 row-cols-sm-4 g-4">
+                        <div class="col">
+                            <img class="col1"src="img/cisco.jpg" width="110" height="110">
+                        </div>
+                        <div class="col">
+                            <p>Technical Jobs</p>
+                            <h4>Cisco Groups</h4>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i><span>India</span>
+                        </div>
+                        <div class="col">            
+                            <img src="img/p3.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70">
+                            <img src="img/p4.jpg" class="rounded-circle" alt="Cinque Terre"width="80" height="70">
+                            <img src="img/p5.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70">
+                            <img src="img/p6.jpg" class="rounded-circle" alt="Cinque Terre" width="80" height="70"> <br>
+                            <span>+7 team size</span>
+                        </div>
+                    </div>
+                    <div class="apply-btn">
+                        <button type="button" class="btn btn-primary">1 vacany</button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-user-plus" aria-hidden="true" style="color: white"></i> Follow</button>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <ul class="page-link text-center">
+                <li class="left-arrow">&#8592;</li>
+                <li class="active">1</li>
+                <li>2</li>
+                <li class="right-arrow">&#8594;</li>
+            </ul>
+        </div>
+    </section>
+    <!----------------Details--------------->
+    <div class="container p-4 pt-4">
+        <div class="row row-cols-1 row-cols-sm-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Locations</h5>
+                        <div class="mb-3">
+                            <label for="exampleInputCountry" class="form-label">Country</label>
+                            <div class="mb-3">
+                                <select id="disabledSelect" class="form-select">
+                                    <option>Select Country</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputCountry" class="form-label">State</label>
+                            <div class="mb-3">
+                                <select id="disabledSelect" class="form-select">
+                                    <option>Select State</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputCountry" class="form-label">City</label>
+                            <div class="mb-3">
+                                <select id="disabledSelect" class="form-select">
+                                    <option>Select City</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">                
+                    <div class="card-body">
+                        <h5 class="card-title">Date Posted </h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Last Hour
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Last 24 hours 
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Last 7 Days
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Last 14 Days
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Last 30 Days
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                All
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">                
+                    <div class="card-body">
+                        <h5 class="card-title">Sector</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Accounting / Finance
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Automotive Jobs
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Construction/Facilites
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Education Training
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Health Care
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Marketing
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Restaurant/Food Services
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Web Development
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">                
+                    <div class="card-body">
+                        <h5 class="card-title">Team Size </h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                1-100 Members
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                101-200 Members
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                201-300 Members
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                301-400 Members
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                401-500 Members
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------App Banner -------------->
+    <section id="app-banner" class="text-center">
+        <h1>Find Jobs On Mobile, Download BasketHunt App</h1>
+        <img src="img/b4.jpg">
+    </section>
+
+    <!--------- footer----------->
+    <section id="footer" class="text-center">
+        <img src="img/b1.jpg" class="footer-image">
+        <p>BasketHunt Private Limited</p>
+        <a href=""><img src="img/tweeter.jpg"></a>
+        <a href=""><img src="img/fb.jpg"></a>
+        <a href=""><img src="img/whatsapp.jpg"></a>
+        <a href=""><img src="img/in.jpg"></a>
+        <hr>
+    </section>
+</body>
+</html>
